@@ -1,0 +1,19 @@
+// variable + variable---> non constant string pool
+class StringDemo 
+{
+	public static void main(String[] args) 
+	{
+		String s1, s2, s3, s4;
+		s1="ritu";  // constant string pool
+		s2="raj";  // constant string pool 
+		s3=s1+s2;        // non constant string pool
+		s4=new String("rituraj");  // it will always allocted in non constant string pool
+		System.out.println(s3);
+		System.out.println(s4);
+
+		if(s5==s4)  //  and we know duplicate is allowed in non constant string pool
+			System.out.println("references are pointing same object");
+		else
+			System.out.println("references are not pointing same objects");
+	}
+}

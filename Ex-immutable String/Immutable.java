@@ -1,0 +1,9 @@
+class Immutable 
+{
+	public static void main(String[] args) 
+	{
+		String s="raja";
+		s[0]="m";             //  we cann't change because it is immutable string
+		System.out.println(s);  // we are especting for maja
+	}
+}
